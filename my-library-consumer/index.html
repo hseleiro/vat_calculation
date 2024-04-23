@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Inferno App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-content">
+          <p class="title">Add your expense</p>
+          <p class="subtitle">Vat 23%</p>
+          <input
+            class="input"
+            type="number"
+            id="product"
+            onchange="getInputValueById()"
+          />
+          <div class="result" id="result"></div>
+          <div class="result" id="vat"></div>
+        </div>
+        <footer class="card-footer">
+          <button onclick="sumNumbers()">Sum</button>
+        </footer>
+      </div>
+    </div>
+    <script src="out.js"></script>
+  </body>
+</html>
